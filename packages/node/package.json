@@ -1,5 +1,5 @@
 {
-  "name": "flowter",
+  "name": "@flowter/node",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -7,8 +7,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "briwa <ssbriwa@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "lerna": "^3.16.4"
-  }
+  "license": "MIT"
 }
