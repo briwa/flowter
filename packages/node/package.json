@@ -1,11 +1,45 @@
 {
   "name": "@flowter/node",
+  "description": "Flowter node component.",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "keywords": [
+    "flowchart",
+    "typescript",
+    "vue",
+    "vuejs",
+    "diagram",
+    "component",
+    "vue-component"
+  ],
+  "author": "https://github.com/briwa",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build:library": "vue-cli-service build --target lib --name flowter-node src/index.vue"
   },
-  "author": "briwa <ssbriwa@gmail.com>",
-  "license": "MIT"
+  "main": "dist/flowter-node.common.js",
+  "files": [
+    "dist/flowter-node.common.js",
+    "dist/flowter-node.umd.js",
+    "dist/flowter-node.css"
+  ],
+  "dependencies": {
+    "vue": "2.6.6",
+    "vue-class-component": "6.0.0",
+    "vue-property-decorator": "7.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "23.1.4",
+    "@vue/cli-plugin-babel": "3.5.0",
+    "@vue/cli-plugin-typescript": "3.5.0",
+    "@vue/cli-plugin-unit-jest": "3.8.0",
+    "@vue/cli-service": "3.7.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-core": "7.0.0-bridge.0",
+    "ts-jest": "23.10.0",
+    "typedoc": "0.14.2",
+    "typescript": "3.2.1",
+    "vue-template-compiler": "2.6.6"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/briwa/flowter"
 }

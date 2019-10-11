@@ -1,0 +1,41 @@
+<div
+  class="flowter-edge-parent"
+  :style="containerStyle"
+  @mouseenter="$emit('mouseenter', { from, to })"
+  @mouseleave="$emit('mouseleave', { from, to })">
+  <div class="flowter-edge-child">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      :view-box.camel="viewBox">
+      <defs>
+        <marker
+          viewBox="0 0 10 10"
+          refX="5"
+          refY="5"
+          markerWidth="5"
+          markerHeight="5"
+          orient="auto-start-reverse"
+          :id="arrowId">
+          <path
+            d="M 0 0 L 9 5 L 0 10 z"
+            :fill="color"
+            :stroke="color" />
+        </marker>
+      </defs>
+      <path
+        fill="none"
+        :stroke-width="strokeWidth"
+        :stroke="color"
+        :shape-rendering="shapeRendering"
+        :d="pathCommand"
+        :marker-start="markerStart"
+        :marker-end="markerEnd" />
+    </svg>
+    <template v-if="text">
+      <span
+        v-if="text"
+        :style="textStyle">{{ text }}</span>
+    </template>
+    <template v-else />
+  </div>
+</div>
