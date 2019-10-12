@@ -11,9 +11,6 @@ import simple from './__fixtures__/simple.json'
 // tslint:disable-next-line
 new Vue({
   render: (h) => h(App, {
-    props: {
-      nodes: simple.nodes,
-      edges: simple.edges
-    }    
+    props: simple
   })
 }).$mount('#app')
