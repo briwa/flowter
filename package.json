@@ -1,14 +1,15 @@
 {
   "name": "flowter",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "Vue-based flowchart component.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bootstrap": "lerna bootstrap",
+    "serve:flowchart": "lerna run --scope=\"@flowter/flowchart\" --stream serve"
+  },
+  "devDependencies": {
+    "lerna": "3.16.4"
   },
   "author": "briwa <ssbriwa@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "lerna": "^3.16.4"
-  }
+  "repository": "https://github.com/briwa/flowter"
 }

@@ -17,5 +17,6 @@
     "access": "public"
   },
   "author": "briwa <ssbriwa@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "https://github.com/briwa/flowter"
 }

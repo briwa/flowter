@@ -11,7 +11,6 @@
     "component",
     "vue-component"
   ],
-  "author": "https://github.com/briwa",
   "scripts": {
     "serve": "vue-cli-service serve ./serve.ts",
     "build": "vue-cli-service build --target lib --name @flowter/edge src/index.vue"
@@ -47,6 +46,7 @@
   "publishConfig": {
     "access": "public"
   },
+  "author": "briwa <ssbriwa@gmail.com>",
   "license": "MIT",
   "repository": "https://github.com/briwa/flowter"
 }
