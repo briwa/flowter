@@ -1,7 +1,7 @@
 {
   "name": "@flowter/edge",
   "description": "Flowter edge component.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "flowchart",
     "typescript",
@@ -22,8 +22,8 @@
     "dist/@flowter/edge.css"
   ],
   "dependencies": {
-    "@flowter/constants": "^0.1.0",
-    "@flowter/types": "^0.1.0",
+    "@flowter/constants": "^0.1.1",
+    "@flowter/types": "^0.1.1",
     "vue": "2.6.6",
     "vue-class-component": "6.0.0",
     "vue-property-decorator": "7.0.0"
