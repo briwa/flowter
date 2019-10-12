@@ -1,7 +1,7 @@
 {
   "name": "@flowter/flowchart",
   "description": "A simple flowchart component made with Vue. Requires a graph-like data structure as an input and renders it as a flowchart.",
-  "version": "0.2.2",
+  "version": "0.1.0",
   "keywords": [
     "flowchart",
     "typescript",
@@ -23,10 +23,10 @@
     "dist/@flowter/flowchart.css"
   ],
   "dependencies": {
-    "@flowter/constants": "0.0.1",
-    "@flowter/edge": "0.0.1",
-    "@flowter/node": "0.0.1",
-    "@flowter/types": "0.0.1",
+    "@flowter/constants": "^0.1.0",
+    "@flowter/edge": "^0.1.0",
+    "@flowter/node": "^0.1.0",
+    "@flowter/types": "^0.1.0",
     "vue": "2.6.6",
     "vue-class-component": "6.0.0",
     "vue-property-decorator": "7.0.0"
