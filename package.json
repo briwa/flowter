@@ -1,6 +1,6 @@
 {
   "name": "flowter",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Vue-based flowchart component.",
   "scripts": {
     "bootstrap": "lerna bootstrap",
@@ -9,6 +9,9 @@
   "devDependencies": {
     "lerna": "3.16.4"
   },
+  "files": [
+    "README.md"
+  ],
   "author": "briwa <ssbriwa@gmail.com>",
   "license": "MIT",
   "repository": "https://github.com/briwa/flowter"

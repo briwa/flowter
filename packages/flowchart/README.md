@@ -9,7 +9,7 @@ npm install --save @flowter/flowchart
 ```
 
 ## Usage
-Import in your component (and the CSS as well):
+Import in your component:
 ```javascript
 import Flowchart from '@flowter/flowchart'
 Vue.component('Flowchart', Flowchart)

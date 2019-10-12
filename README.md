@@ -1,12 +1,14 @@
 # flowter
+Vue-based flowchart view component.
 
-## Running in development
-```
-npm run install && npm run bootstrap
-```
-This will install the packages and its dependencies.
+This is a repository that holds the following components:
+- [`@flowter/flowchart`](https://github.com/briwa/flowter/tree/master/packages/flowchart)
+- [`@flowter/node`](https://github.com/briwa/flowter/tree/master/packages/node)
+- [`@flowter/edge`](https://github.com/briwa/flowter/tree/master/packages/edge)
 
-## TODO
+Please see the respective package for more details on the usage.
+
+## Note
 This library is a work in progress. Please see the issues on more details.
 
 ## License
