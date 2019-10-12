@@ -3,7 +3,6 @@ import { Component, Mixins } from 'vue-property-decorator'
 
 // Mixins
 import FlowterNodeRendererMixin from '../../mixins/renderer'
-import { NODE_SMALLER_RATIO } from '@flowter/constants'
 
 /**
  * The Flowter node rhombus's Vue class component.

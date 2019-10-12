@@ -13,16 +13,18 @@
   ],
   "author": "https://github.com/briwa",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build:library": "vue-cli-service build --target lib --name flowter-edge src/index.vue"
+    "serve": "vue-cli-service serve ./serve.ts",
+    "build": "vue-cli-service build --target lib --name @flowter/edge src/index.vue"
   },
-  "main": "dist/flowter-edge.common.js",
+  "main": "dist/@flowter/edge.common.js",
   "files": [
-    "dist/flowter-edge.common.js",
-    "dist/flowter-edge.umd.js",
-    "dist/flowter-edge.css"
+    "dist/@flowter/edge.common.js",
+    "dist/@flowter/edge.umd.js",
+    "dist/@flowter/edge.css"
   ],
   "dependencies": {
+    "@flowter/constants": "0.0.1",
+    "@flowter/types": "0.0.1",
     "vue": "2.6.6",
     "vue-class-component": "6.0.0",
     "vue-property-decorator": "7.0.0"
@@ -35,6 +37,8 @@
     "@vue/cli-service": "3.7.0",
     "@vue/test-utils": "1.0.0-beta.29",
     "babel-core": "7.0.0-bridge.0",
+    "node-sass": "4.12.0",
+    "sass-loader": "8.0.0",
     "ts-jest": "23.10.0",
     "typedoc": "0.14.2",
     "typescript": "3.2.1",

@@ -2,10 +2,10 @@
 import { Prop, Component, Vue, Mixins } from 'vue-property-decorator'
 
 // Components
-import FlowterEdgeStraight from './components/straight/index.vue'
-import FlowterEdgeBentForward from './components/bent-forward/index.vue'
-import FlowterEdgeBentBackward from './components/bent-backward/index.vue'
-import FlowterEdgeCircular from './components/circular/index.vue'
+import FlowterEdgeStraight from './components/straight'
+import FlowterEdgeBentForward from './components/bent-forward'
+import FlowterEdgeBentBackward from './components/bent-backward'
+import FlowterEdgeCircular from './components/circular'
 
 // Mixins
 import FlowterEdgePropsMixin from './mixins/props'

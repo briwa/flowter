@@ -13,24 +13,20 @@
   ],
   "author": "https://github.com/briwa",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build:static": "vue-cli-service build",
-    "build:library": "vue-cli-service build --target lib --name flowter src/components/flowter-flowchart/index.vue",
-    "lint": "vue-cli-service lint",
-    "test": "vue-cli-service test:unit",
-    "test:ci": "vue-cli-service test:unit --ci",
-    "preversion": "npm run lint && npm run test",
-    "version": "npm run build:library",
-    "postversion": "git push && git push --tags",
-    "docs": "rimraf docs && typedoc src"
+    "serve": "vue-cli-service serve ./serve.ts",
+    "build": "vue-cli-service build --target lib --name @flowter/flowchart src/index.vue"
   },
-  "main": "dist/flowter.common.js",
+  "main": "dist/@flowter/flowchart.common.js",
   "files": [
-    "dist/flowter.common.js",
-    "dist/flowter.umd.js",
-    "dist/flowter.css"
+    "dist/@flowter/flowchart.common.js",
+    "dist/@flowter/flowchart.umd.js",
+    "dist/@flowter/flowchart.css"
   ],
   "dependencies": {
+    "@flowter/constants": "0.0.1",
+    "@flowter/edge": "0.0.1",
+    "@flowter/node": "0.0.1",
+    "@flowter/types": "0.0.1",
     "vue": "2.6.6",
     "vue-class-component": "6.0.0",
     "vue-property-decorator": "7.0.0"
@@ -43,6 +39,8 @@
     "@vue/cli-service": "3.7.0",
     "@vue/test-utils": "1.0.0-beta.29",
     "babel-core": "7.0.0-bridge.0",
+    "node-sass": "4.12.0",
+    "sass-loader": "8.0.0",
     "ts-jest": "23.10.0",
     "typedoc": "0.14.2",
     "typescript": "3.2.1",

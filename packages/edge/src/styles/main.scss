@@ -1,0 +1,14 @@
+.flowter-edge-parent {
+  position: absolute;
+  z-index: 1;
+
+  .flowter-edge-child {
+    span {
+      position: absolute;
+    }
+
+    path {
+      cursor: pointer;
+    }
+  }
+}

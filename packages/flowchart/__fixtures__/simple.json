@@ -1,0 +1,11 @@
+{
+  "nodes": {
+    "first": { "text": "First" },
+    "second": { "text": "Second" },
+    "third": { "text": "Third" }
+  },
+  "edges": [
+    { "from": "first", "to": "second", "text": "Yes" },
+    { "from": "first", "to": "third", "text": "No" }
+  ]
+}

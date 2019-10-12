@@ -1,0 +1,22 @@
+.flowter-node-parent {
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+  }
+
+  .flowter-node-text {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+}

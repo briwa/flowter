@@ -1,9 +1,15 @@
 // Libraries
 import { Component, Mixins } from 'vue-property-decorator'
 
+// Styles
+import '@flowter/node/dist/@flowter/node.css'
+import '@flowter/edge/dist/@flowter/edge.css'
+
+// TODO: Strict mode won't allow these components to be imported without types.
+// Using require as a workaround but a proper fix is needed.
 // Components
-import FlowterEdge from '@flowter/edge/index.vue'
-import FlowterNode from '@flowter/node/index.vue'
+const FlowterEdge = require('@flowter/edge')
+const FlowterNode = require('@flowter/node')
 
 // Mixins
 import FlowterFlowchartRendererMixin from './mixins/renderer'
