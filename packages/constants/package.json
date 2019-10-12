@@ -13,6 +13,9 @@
     "tslint-config-standard": "8.0.1",
     "typescript": "3.3.3333"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "briwa <ssbriwa@gmail.com>",
   "license": "MIT"
 }
