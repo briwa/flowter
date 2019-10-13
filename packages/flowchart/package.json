@@ -22,10 +22,10 @@
     "dist/@flowter/flowchart.css"
   ],
   "dependencies": {
-    "@flowter/constants": "^0.1.1",
-    "@flowter/edge": "^0.1.1",
-    "@flowter/node": "^0.1.1",
-    "@flowter/types": "^0.1.1",
+    "@flowter/constants": "0.1.1",
+    "@flowter/edge": "0.1.1",
+    "@flowter/node": "0.1.1",
+    "@flowter/types": "0.1.1",
     "vue": "2.6.6",
     "vue-class-component": "6.0.0",
     "vue-property-decorator": "7.0.0"
@@ -42,7 +42,7 @@
     "sass-loader": "8.0.0",
     "ts-jest": "23.10.0",
     "typedoc": "0.14.2",
-    "typescript": "3.2.1",
+    "typescript": "3.6.4",
     "vue-template-compiler": "2.6.6"
   },
   "publishConfig": {

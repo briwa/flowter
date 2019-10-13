@@ -9,9 +9,9 @@ npm install --save @flowter/flowchart
 ```
 
 ## Usage
-Import in your component:
+Import in your component (and the CSS too):
 ```javascript
-import Flowchart from '@flowter/flowchart'
+import Flowchart from '@flowter/flowchart/dist/@flowter/flowchart.css'
 Vue.component('Flowchart', Flowchart)
 ```
 
@@ -48,17 +48,6 @@ The goal is to make creating flowcharts as simple as possible.
 If you need more visual customizations, of course you can add your own styling with CSS.
 
 Please see the [docs](https://briwa.github.io/vue-flowter) for more details on the props.
-
-## Running in development
-Make sure you've done the setup beforehand.
-```
-npm run install && npm run bootstrap
-```
-
-To run the flowchart component in the browser:
-```
-npm run serve:flowchart
-```
 
 ## TODO
 This component is a work in progress. See issues for more details.

@@ -5,13 +5,13 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rimraf dist && tsc --build"
+    "build": "rimraf dist && tsc -b ./tsconfig.build.json"
   },
   "devDependencies": {
     "rimraf": "2.6.3",
     "tslint": "5.13.0",
     "tslint-config-standard": "8.0.1",
-    "typescript": "3.3.3333"
+    "typescript": "3.6.4"
   },
   "publishConfig": {
     "access": "public"

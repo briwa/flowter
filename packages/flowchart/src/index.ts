@@ -5,9 +5,9 @@ import { Component, Mixins } from 'vue-property-decorator'
 import '@flowter/node/dist/@flowter/node.css'
 import '@flowter/edge/dist/@flowter/edge.css'
 
+// Components
 // TODO: Strict mode won't allow these components to be imported without types.
 // Using require as a workaround but a proper fix is needed.
-// Components
 const FlowterEdge = require('@flowter/edge')
 const FlowterNode = require('@flowter/node')
 
