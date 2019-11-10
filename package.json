@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "description": "Vue-based flowchart component.",
   "scripts": {
-    "bootstrap": "lerna bootstrap",
+    "setup": "lerna bootstrap && lerna run build --stream",
     "serve:flowchart": "lerna run --scope=\"@flowter/flowchart\" --stream serve"
   },
   "devDependencies": {
