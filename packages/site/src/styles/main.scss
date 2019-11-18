@@ -1,16 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
 // Set your brand colors
-$purple: #387D7A;
-$pink: #32936F;
-$brown: #395E66;
-$beige-light: #D1EFB9;
-$beige-lighter: #E0F4D0;
+$orange: #D69D85;
+$blue-light: #569CD6;
+$black-lighter: #444444;
+$blue-lighter: #569CD6;
+$beige-lighter: #fff6f2;
 
 // Update Bulma's global variables
-$family-sans-serif: "Nunito", sans-serif;
-$grey-dark: $brown;
-$grey-light: $beige-light;
-$primary: $purple;
-$link: $pink;
+$family-sans-serif: "Open Sans", sans-serif;
+$grey-dark: $black-lighter;
+$grey-light: $blue-lighter;
+$primary: $orange;
+$link: $blue-light;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
@@ -22,6 +24,14 @@ $input-shadow: none;
 
 @import "~bulma/bulma";
 
-.content pre {
-  white-space: normal;
+.centered-vh {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.demo-cont {
+  width: 480px;
+  height: 560px;
 }

@@ -5,9 +5,6 @@
         <nav class="navbar">
           <div class="container">
             <div class="navbar-brand">
-              <a class="navbar-item" href="../">
-                flowter
-              </a>
               <span class="navbar-burger burger" data-target="navbarMenu">
                 <span></span>
                 <span></span>
@@ -18,9 +15,8 @@
               <div class="navbar-end">
                 <div class="tabs is-right">
                   <ul>
-                    <li class="is-active"><a>Home</a></li>
-                    <li><a href="">Getting started</a></li>
-                    <li><a href="">Examples</a></li>
+                    <li class="is-active"><a href="#">Home</a></li>
+                    <li><a href="#examples">Examples</a></li>
                   </ul>
                 </div>
               </div>
@@ -29,42 +25,54 @@
         </nav>
       </div>
       <div class="hero-body">
-        <div class="container has-text-centered">
+        <div class="container">
           <div class="columns is-vcentered">
-            <div class="column is-5">
-              <div>
-                <flowchart
-                  :nodes="nodes"
-                  :edges="edges" />
-              </div>
-              <div class="tabs is-toggle">
-                <ul>
-                  <li class="is-active">
-                    <a>
-                      <span>Rendered</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a>
-                      <span>Code</span>
-                    </a>
-                  </li>
-                </ul>
+            <div class="column is-7">
+              <div class="centered-vh">
+                <div
+                  v-show="selectedDemo === 'rendered'"
+                  class="centered-vh demo-cont">
+                  <flowchart
+                    :nodes="nodes"
+                    :edges="edges" />
+                </div>
+                <div
+                  v-show="selectedDemo === 'code'"
+                  class="demo-cont">
+                  <highlight-code
+                    :code="vueCode"
+                    lang="vue" />
+                  <highlight-code
+                    :code="jsCode"
+                    lang="javascript" />
+                </div>
+                <div class="tabs is-toggle">
+                  <ul>
+                    <li
+                      :class="{ 'is-active': selectedDemo === 'rendered' }"
+                      @click="onSelectDemo('rendered')">
+                      <a>
+                        <span>Rendered</span>
+                      </a>
+                    </li>
+                    <li
+                      :class="{ 'is-active': selectedDemo === 'code' }"
+                      @click="onSelectDemo('code')">
+                      <a>
+                        <span>Code</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="column is-6 is-offset-1">
+            <div class="column is-5 has-text-centered">
               <h1 class="title is-2">
                 flowter
               </h1>
               <h2 class="subtitle is-4">
                 Your flowchart made in Vue
               </h2>
-              <div class="container">
-                <code>
-                  npm i -P @flowter/flowchart
-                </code>
-              </div>
-              <br>
               <p class="has-text-centered">
                 <a class="button is-medium is-primary is-outlined">
                   Get started
