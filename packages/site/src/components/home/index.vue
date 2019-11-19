@@ -27,7 +27,7 @@
                         <span>Rendered</span>
                       </a>
                     </li>
-                    <li :class="{ 'is-active': selectedDemo === 'demo' }">
+                    <li :class="{ 'is-active': selectedDemo === 'code' }">
                       <a @click.prevent="onSelectDemo('code')">
                         <span>Code</span>
                       </a>
