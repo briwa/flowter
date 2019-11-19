@@ -1,7 +1,7 @@
 {
   "name": "@flowter/site",
   "description": "Flowter public site.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "keywords": [
     "flowchart",
     "typescript",

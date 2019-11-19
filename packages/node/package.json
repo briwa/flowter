@@ -1,7 +1,7 @@
 {
   "name": "@flowter/node",
   "description": "Flowter node component.",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "keywords": [
     "flowchart",
     "typescript",
@@ -22,8 +22,8 @@
     "dist/@flowter/node.css"
   ],
   "dependencies": {
-    "@flowter/constants": "^0.1.4",
-    "@flowter/types": "^0.1.4",
+    "@flowter/constants": "^0.1.5",
+    "@flowter/types": "^0.1.5",
     "vue": "2.6.9",
     "vue-class-component": "6.0.0",
     "vue-property-decorator": "7.0.0"
