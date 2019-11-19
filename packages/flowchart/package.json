@@ -26,7 +26,7 @@
     "@flowter/edge": "^0.1.2",
     "@flowter/node": "^0.1.2",
     "@flowter/types": "^0.1.2",
-    "vue": "2.6.6",
+    "vue": "2.6.9",
     "vue-class-component": "6.0.0",
     "vue-property-decorator": "7.0.0"
   },
@@ -43,7 +43,7 @@
     "ts-jest": "23.10.0",
     "typedoc": "0.14.2",
     "typescript": "3.6.4",
-    "vue-template-compiler": "2.6.6"
+    "vue-template-compiler": "2.6.9"
   },
   "publishConfig": {
     "access": "public"
