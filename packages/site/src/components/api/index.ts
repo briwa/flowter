@@ -2,8 +2,8 @@
 import { Component, Vue } from 'vue-property-decorator'
 
 /**
- * The site component.
+ * The API component.
  */
 @Component
-export default class FlowterSite extends Vue {
+export default class FlowterSiteApi extends Vue {
 }
