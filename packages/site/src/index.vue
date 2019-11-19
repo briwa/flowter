@@ -42,9 +42,6 @@
                   <highlight-code
                     :code="vueCode"
                     lang="vue" />
-                  <highlight-code
-                    :code="jsCode"
-                    lang="javascript" />
                 </div>
                 <div class="tabs is-toggle">
                   <ul>
@@ -74,13 +71,43 @@
                 Your flowchart made in Vue
               </h2>
               <p class="has-text-centered">
-                <a class="button is-medium is-primary is-outlined">
+                <a
+                  class="button is-medium is-primary is-outlined"
+                  href="#getting-started">
                   Get started
                 </a>
               </p>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container content">
+        <h2 id="getting-started">Getting started</h2>
+        <p>Install the package:</p>
+        <highlight-code>
+          npm install --save @flowter/flowchart
+        </highlight-code>
+        <p>Import the component and the CSS:</p>
+        <highlight-code lang="javascript">
+          import '@flowter/flowchart/dist/@flowter/flowchart.css'
+          import Flowchart from '@flowter/flowchart'
+
+          Vue.component('Flowchart', Flowchart)
+        </highlight-code>
+        <p>Use them in your component:</p>
+        <highlight-code
+          :code="vueCode"
+          lang="vue" />
+        <h2>Props</h2>
+        There are two required props in order for the flowchart to be rendered:
+        <h3><code>nodes</code></h3>
+        <p>This prop represents the nodes you're rendering in the flowchart. It is a dictionary
+          with the keys being the unique identifier for each node.</p>
+        <h3><code>edges</code></h3>
+        <p>This prop represents the connection between the nodes. It is an array of objects which means
+          one node can connect to multiple nodes at the same time.</p>
       </div>
     </section>
   </div>
