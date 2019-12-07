@@ -23,10 +23,7 @@
   ],
   "dependencies": {
     "@flowter/constants": "^0.1.5",
-    "@flowter/types": "^0.1.5",
-    "vue": "2.6.9",
-    "vue-class-component": "6.0.0",
-    "vue-property-decorator": "7.0.0"
+    "@flowter/types": "^0.1.5"
   },
   "devDependencies": {
     "@types/jest": "23.1.4",
@@ -41,6 +38,7 @@
     "ts-jest": "23.10.0",
     "typedoc": "0.14.2",
     "typescript": "3.6.4",
+    "vue": "2.6.9",
     "vue-template-compiler": "2.6.9"
   },
   "publishConfig": {
