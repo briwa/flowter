@@ -41,40 +41,14 @@
                 flowter
               </h1>
               <h2 class="subtitle is-4">
-                Your flowchart made in Vue
+                A flowchart made in Vue
               </h2>
-              <p class="has-text-centered">
-                <a
-                  class="button is-medium is-primary is-outlined"
-                  href="#getting-started">
-                  Get started
-                </a>
-              </p>
+              <highlight-code>
+                npm install --save @flowter/flowchart
+              </highlight-code>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container content">
-        <h2 id="getting-started">Getting started</h2>
-        <p>Install the package:</p>
-        <highlight-code>
-          npm install --save @flowter/flowchart
-        </highlight-code>
-        <p>Import the component and the CSS:</p>
-        <highlight-code lang="javascript">
-          import '@flowter/flowchart/dist/@flowter/flowchart.css'
-          import Flowchart from '@flowter/flowchart'
-
-          Vue.component('Flowchart', Flowchart)
-        </highlight-code>
-        <p>Use them in your component:</p>
-        <highlight-code
-          :code="vueCode"
-          lang="vue" />
-        <p>Head over to the <router-link :to="{ name: 'api' }">API page</router-link>
-        to learn more about the props.</p>
       </div>
     </section>
   </div>

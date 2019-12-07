@@ -18,16 +18,6 @@
                   :to="{ name: 'home' }">
                   <a>Home</a>
                 </router-link>
-                <router-link
-                  tag="li"
-                  :to="{ name: 'api' }">
-                  <a>API</a>
-                </router-link>
-                <router-link
-                  tag="li"
-                  :to="{ name: 'examples' }">
-                  <a>Examples</a>
-                </router-link>
               </ul>
             </div>
           </div>

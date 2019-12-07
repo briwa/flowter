@@ -30,7 +30,13 @@ export default class FlowterSiteHome extends Vue {
         :edges="edges" />
     </template>
     <script>
+      import '@flowter/flowchart/dist/@flowter/flowchart.css'
+      import Flowchart from '@flowter/flowchart'
+
       export default {
+        components: {
+          Flowchart
+        },
         data () {
           return {
             nodes: {
