@@ -1,6 +1,3 @@
-// Libraries
-import { Component, Mixins } from 'vue-property-decorator'
-
 // Styles
 import '@flowter/node/dist/@flowter/node.css'
 import '@flowter/edge/dist/@flowter/edge.css'
@@ -23,11 +20,11 @@ import FlowterFlowchartRendererMixin from './mixins/renderer'
  * This component relies on the renderer mixin
  * to shape its props into a rendered flowchart.
  */
-@Component({
+export default  {
+  name: 'FlowterFlowchart',
+  mixins: [FlowterFlowchartRendererMixin],
   components: {
     FlowterEdge,
     FlowterNode
   }
-})
-export default class FlowterFlowchart extends Mixins(FlowterFlowchartRendererMixin) {
 }
