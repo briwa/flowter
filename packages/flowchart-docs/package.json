@@ -19,13 +19,16 @@
   },
   "scripts": {
     "docs:serve": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "postinstall": "patch-package"
   },
   "bugs": {
     "url": "https://github.com/briwa/flowter/issues"
   },
   "devDependencies": {
     "@flowter/flowchart": "0.1.6",
+    "patch-package": "6.2.0",
+    "@vuepress/core": "1.2.0",
     "vuepress": "1.2.0"
   }
 }
