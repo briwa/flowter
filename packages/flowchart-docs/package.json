@@ -18,7 +18,8 @@
     "url": "git+https://github.com/briwa/flowter.git"
   },
   "scripts": {
-    "serve": "vuepress dev docs"
+    "docs:serve": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "bugs": {
     "url": "https://github.com/briwa/flowter/issues"

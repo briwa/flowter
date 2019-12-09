@@ -3,8 +3,9 @@
   "version": "0.1.2",
   "description": "Vue-based flowchart component.",
   "scripts": {
-    "setup": "lerna clean && lerna bootstrap && lerna run build --stream",
-    "serve:flowchart": "lerna run --scope=\"@flowter/flowchart\" --stream serve"
+    "setup": "lerna clean --yes && lerna bootstrap && lerna run build --stream",
+    "docs:build": "lerna run docs:build --scope=@flowter/flowchart-docs",
+    "serve:flowchart": "lerna run serve --scope=@flowter/flowchart --stream"
   },
   "devDependencies": {
     "lerna": "3.16.4",
